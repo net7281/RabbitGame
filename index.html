@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>RabbitGame</title>
+
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"> </script>
+    <script type="text/javascript" src="js/init.js"> </script>
+
+
+</head>
+
+<body>
+
+    <!--타이틀 배경음을 위한 꼼수 > 자동재생을 할 수 없어서 마우스오버 시 배경음이 나오게 설정-->
+    <div id="full" onmouseover=titleBGM.play()>
+
+        <!--데코레이션 div-->
+        <div id="topdeco"></div>
+        <div id="bottomdeco"></div>
+
+        <!--게임을 감싸는 (배경) div-->
+        <div id="wrap">
+
+            <!--바닥 div-->
+            <div id="floor">
+            </div>
+
+            <!--플레이어 div-->
+            <div id="player">
+            </div>
+
+            <!--점수 박스 div-->
+            <div id="scoreBox">
+                <p>Score 0</p>
+            </div>
+            
+            <!--최종 점수 박스 div-->
+            <div id="finalscore">
+                <p>Score 0</p>
+            </div>
+            
+            <!--타이틀 (시작)화면 div-->
+            <div id="titleScreen">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

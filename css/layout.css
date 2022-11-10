@@ -1,0 +1,187 @@
+/* CSS Document */
+@font-face {
+    font-family: HS두꺼비체;
+    src: url(../HS두꺼비체.woff) format('woff'); //웹폰트 불러오기
+}
+
+body {
+    max-width: 100%;
+    /*화면크기를 브라우저 크기에 맞게*/
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#full { /*배경음악 위한 div*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+/*데코레이션*/
+#topdeco{ 
+    height: 19px;
+    width: 100%;
+    top: 20px;
+    background: url(../images/Deco.png) repeat-x; /*모자라는 부분 가로로 반복*/
+    position: absolute;
+}
+
+#bottomdeco{
+    height: 19px;
+    width: 100%;
+    bottom: 20px;
+    background: url(../images/Deco.png) repeat-x; /*모자라는 부분 가로로 반복*/
+    position: absolute;
+}
+
+
+/*배경*/
+#wrap {
+    width: 700px;
+    height: 500px;
+    
+    /*중앙정렬*/
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -350px;
+    
+    background: url(../images/bg1.png) repeat-x; /*첫번째 배경*/
+    position: absolute;
+    overflow: hidden;
+
+}
+
+/*바닥*/
+#floor {
+    width: 700px;
+    height: 93px;
+    background: url(../images/floorTile.png) repeat-x;
+    position: absolute;
+    bottom: 0px;
+    display: none;
+}
+
+/*플레이어*/
+#player {
+    width: 91px;
+    height: 133px;
+    background: url(../images/RabbitWalk.gif) repeat-x;
+    position: absolute;
+    bottom: 92px;
+    left: 100px;
+    display: none;
+}
+
+/*동전*/
+.coin {
+    width: 44px;
+    height: 58px;
+    background: url(../images/coin.png) no-repeat;
+    position: absolute;
+    z-index: 99;
+    bottom: 250px;
+    left: 700px;
+}
+
+/*돌*/
+.stone {
+    width: 66px;
+    height: 33px;
+    background: url(../images/stone.png) no-repeat;
+    position: absolute;
+    z-index: 99;
+    bottom: 92px;
+    left: 700px;
+}
+
+/*점수 박스*/
+#scoreBox {
+    width: 411px;
+    height: 70px;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    overflow: hidden;
+    background: url(../images/scoreBacking.png);
+    display: none;
+
+}
+
+/*점수박스 중 p태그*/
+#scoreBox p {
+    font-family: HS두꺼비체; /*웹폰트 지정*/
+    color: #FFF;
+    font-size: 30px;
+    
+    /*그림자 효과*/
+    text-shadow: 1px 1px 1px #333333;
+    -moz-text-shadow: 1px 1px 1px #333333;
+    -webkit-text-shadow: 1px 1px 1px #333333;
+    left: 150px;
+    top: -10px;
+    position: absolute;
+}
+
+/*최종점수 박스*/
+#finalscore {
+    width: 260px;
+    height: 40px;
+    position: absolute;
+    top: 80px;
+    right: 310px;
+    overflow: hidden;
+    display: none;
+
+}
+/*최종점수박스 중 p태그*/
+#finalscore p {
+    font-family: HS두꺼비체; /*웹폰트 지정*/
+    color: #FFF;
+    position: absolute;
+}
+
+/*시작화면*/
+#titleScreen {
+    background: url(../images/title.png) no-repeat;
+    width: 700px;
+    height: 500px;
+    z-index: 999; /*가장 앞에 나온다는 뜻*/
+}
+
+/*게임상태 (게임오버와 게임클리어 시에 사용)*/
+.gamestate {
+    background: url(../images/gameover.png) no-repeat;
+    width: 700px;
+    height: 500px;
+}
+
+/*생명력 하트*/
+.heart {
+    width: 48px;
+    height: 39px;
+    background: url(../images/heart.png) no-repeat;
+    position: absolute;
+    z-index: 99;
+    top: 10px;
+    left: 10px;
+}
+
+/*왕당근*/
+.Clearcoin{
+    width: 200px;
+    height: 93px;
+    background: url(../images/Clearcoin.png) no-repeat;
+    z-index: 99;
+    bottom: 92px;
+    left: 800px;
+    position: absolute;
+    
+}
